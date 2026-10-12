@@ -1,0 +1,471 @@
+/* Global Styles */
+body {
+    background-color: #edf3fa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #212529;
+    min-height: 100vh;
+}
+
+/* Header & Navbar */
+.navbar {
+    background-color: rgb(23, 42, 81);
+    padding: 14px 0;
+}
+
+.nav-container {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: #ffffff !important;
+    letter-spacing: 0.2px;
+}
+
+.btn-nav {
+    background-color: rgb(23, 42, 81);
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    padding: 6px 12px;
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* =========================================
+   INDEX.HTML STYLES
+   ========================================= */
+
+/* Hero Carousel */
+.carousel-section .carousel-item {
+    position: relative;
+}
+
+.carousel-section .carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(16, 36, 68, 0.85) 0%, rgba(16, 36, 68, 0.58) 45%, rgba(16, 36, 68, 0.12) 100%);
+    pointer-events: none;
+}
+
+.carousel-img {
+    height: 520px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 380px;
+    }
+}
+
+.carousel-caption-start {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8%;
+    bottom: auto;
+    right: auto;
+    text-align: left;
+    max-width: 520px;
+    z-index: 2;
+    padding: 0;
+}
+
+.carousel-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+.carousel-heading {
+    font-size: 2.4rem;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+    .carousel-heading {
+        font-size: 1.7rem;
+    }
+}
+
+.carousel-text {
+    font-size: 0.98rem;
+    color: #e2e8f0;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.btn-carousel-pill {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 9px 24px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-carousel-pill:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Our Goal Section */
+.goal-section {
+    background: linear-gradient(180deg, #f8faff 0%, #edf4fc 50%, #f1f6fd 100%);
+}
+
+.section-tag {
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.section-title {
+    color: #112340;
+    font-size: 2.1rem;
+    margin-bottom: 14px;
+}
+
+.section-desc {
+    color: #4b5563;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    max-width: 780px;
+}
+
+.goal-image-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.goal-image {
+    border-radius: 18px;
+    object-fit: cover;
+    min-height: 320px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(226, 232, 240, 0.7);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.feature-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box-purple {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+}
+
+.icon-box-orange {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+
+.icon-box-blue {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.icon-box-chart {
+    background-color: #ede9fe;
+    color: #4f46e5;
+}
+
+.feature-title {
+    color: #1e293b;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.feature-text {
+    color: #64748b;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #edf4fc;
+}
+
+.cta-title {
+    color: #112340;
+    font-size: 2rem;
+}
+
+.btn-cta-pill {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 28px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-cta-pill:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* =========================================
+   HOME.HTML (COURSES PAGE) STYLES
+   ========================================= */
+
+.main-content-container {
+    max-width: 980px;
+}
+
+.welcome-banner {
+    background: linear-gradient(180deg, #dce9f8 0%, #ebf3fb 100%);
+    border-radius: 14px;
+    padding: 42px 24px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+
+.welcome-title {
+    color: #172a51;
+    font-size: 2.1rem;
+    margin-bottom: 8px;
+}
+
+.welcome-subtitle {
+    color: #2d5580;
+    font-size: 1.05rem;
+}
+
+.courses-title {
+    color: #172a51;
+    font-size: 1.7rem;
+    margin-bottom: 28px;
+}
+
+.course-card {
+    border-radius: 14px;
+    padding: 24px 26px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+.course-title {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.course-desc {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 22px;
+}
+
+.btn-course {
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 18px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.15s ease-in-out;
+}
+
+/* Card Themes */
+.card-html {
+    background-color: #fff5ec;
+    border-left: 6px solid #d9531e;
+}
+.title-html {
+    color: #d9531e;
+}
+.btn-course-html {
+    background-color: #d9531e;
+}
+.btn-course-html:hover {
+    background-color: #bf4313;
+    color: #ffffff;
+}
+
+.card-css {
+    background-color: #eff6ff;
+    border-left: 6px solid #0284c7;
+}
+.title-css {
+    color: #0284c7;
+}
+.btn-course-css {
+    background-color: #0284c7;
+}
+.btn-course-css:hover {
+    background-color: #0369a1;
+    color: #ffffff;
+}
+
+.card-bootstrap {
+    background-color: #f5f0fb;
+    border-left: 6px solid #6f42c1;
+}
+.title-bootstrap {
+    color: #5c3587;
+}
+.btn-course-bootstrap {
+    background-color: #5c3587;
+}
+.btn-course-bootstrap:hover {
+    background-color: #49286d;
+    color: #ffffff;
+}
+
+.card-javascript {
+    background-color: #fefce8;
+    border-left: 6px solid #ca8a04;
+}
+.title-javascript {
+    color: #8c6b12;
+}
+.btn-course-javascript {
+    background-color: #8c6b12;
+}
+.btn-course-javascript:hover {
+    background-color: #70540a;
+    color: #ffffff;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    padding: 4px 6px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    padding: 14px 18px;
+}
+
+.modal-title {
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.modal-body {
+    padding: 18px;
+}
+
+.modal-course-name {
+    color: #212529;
+    font-size: 1.25rem;
+}
+
+.modal-course-text {
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    padding: 8px 18px 16px 18px;
+}
+
+.btn-modal-close {
+    background-color: #5c636a;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 18px;
+    font-size: 0.95rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-modal-close:hover {
+    background-color: #4b5157;
+    color: #ffffff;
+}
+
+/* =========================================
+   LOGIN.HTML STYLES
+   ========================================= */
+
+.login-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+
+.btn-login {
+    background-color: rgb(23, 42, 81);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-login:hover {
+    background-color: #101e3b;
+    color: #ffffff;
+}
+
+/* =========================================
+   FOOTER (COMMON)
+   ========================================= */
+
+.footer {
+    background-color: rgb(23, 42, 81);
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer-title {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.footer-copy {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
